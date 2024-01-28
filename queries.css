@@ -1,0 +1,232 @@
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .haeding-tertiary {
+    font-size: 2.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+    align-items: center;
+  }
+  .heading-primary {
+    margin-top: 3.2rem;
+  }
+  .hero-img {
+    width: 60%;
+    margin-left: 19.6rem;
+    margin-bottom: 2.6rem;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-bottom: 1.2rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    background-color: rgb(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* display: none; */
+    /* hide it visually  */
+    opacity: 0;
+    /* and make it un accessible to keyboard and mouse  */
+    pointer-events: none;
+    /* hide it form screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .icon-mobile-nav[name="reorder-three-outline"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3.6rem;
+  }
+}
+
+/* @media (max-width: 46em) {
+  .cta-form {
+    margin-bottom: 2.4rem;
+  }
+  .btn--form {
+    display: block;
+    margin-bottom: 1.2rem;
+  }
+} */
+@media (max-width: 46em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+@media (max-width: 40em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    margin-left: 7.6rem;
+  }
+  .logos {
+    display: flex;
+
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .logos img {
+    height: 1.4rem;
+  }
+  .step-text-box {
+    margin-right: -1.5rem;
+  }
+  .step-img {
+    width: 50%;
+  }
+  .meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 1.8rem;
+  }
+  .diets {
+    margin-left: 1.8rem;
+  }
+  .gallery {
+    margin-right: 2.8rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap: 6.4rem;
+  }
+  .cta {
+    height: 72rem;
+  }
+  .cta-text-box {
+    padding: 2.8rem 0.4rem 0.4rem 1.4rem;
+  }
+}
